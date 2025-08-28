@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1 class="fade-in">Welcome to My Portfolio</h1>
+<p class="slide-in">
+    Hi, I'm Emmanuel Amankwah, a passionate developer from Ghana. I love building web applications and exploring new technologies.
+</p>
+<p class="slide-in">
+    Explore <a href="/about">about me</a>, <a href="/projects">my projects</a>, <a href="/blog">blog</a>, or <a href="/contact">contact</a>.
+</p>
+<div class="projects-list">
+    <div class="project-card zoom-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width:48px;height:48px;">
+        <h3>Code Wizard</h3>
+        <p>
+            <img src="https://img.icons8.com/ios-filled/50/000000/hacker.png" alt="Hacker" style="width:32px;height:32px;">
+        </p>
+    </div>
+    <div class="project-card zoom-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="width:48px;height:48px;">
+        <h3>Web Hacker</h3>
+        <p>
+            <img src="https://img.icons8.com/ios-filled/50/000000/source-code.png" alt="Code" style="width:32px;height:32px;">
+        </p>
+    </div>
+    <div class="project-card zoom-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width:48px;height:48px;">
+        <h3>Open Source</h3>
+        <p>
+            <img src="https://img.icons8.com/ios-filled/50/000000/console.png" alt="Console" style="width:32px;height:32px;">
+        </p>
+    </div>
+</div>
+{% endblock %}

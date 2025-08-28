@@ -1,0 +1,133 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, nav, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: #222;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 2em;
+}
+
+/* Headings */
+h1 {
+    color: #00bcd4;
+    margin-bottom: 1em;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+h2, h3 {
+    color: #222;
+    margin-bottom: 0.5em;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.7em;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #222;
+    color: #fff;
+    margin-top: 3em;
+    letter-spacing: 1px;
+    font-size: 1em;
+    border-top: 2px solid #00bcd4;
+}
+
+/* Project Cards (for projects.html) */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.project-card {
+    background: #f9fafc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 1.5em;
+    flex: 1 1 250px;
+    min-width: 220px;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 24px rgba(0,188,212,0.13);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .container { padding: 1em; }
+    .projects-list { flex-direction: column; gap: 1em; }
+    nav a { margin: 0 0.7em; font-size: 1em; }
+}
+/* Add to /home/hey/Desktop/FLASKREN/static/style.css */
+
+.fade-in {
+    animation: fadeIn 1.2s ease;
+}
+.slide-in {
+    animation: slideIn 1s ease;
+}
+.zoom-in {
+    animation: zoomIn 0.8s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
